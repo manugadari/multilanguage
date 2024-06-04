@@ -9,7 +9,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        echo 'Testing...'
+        echo 'SCA SCAN'
         
            snykSecurity failOnError: false, organisation: 'feature', projectName: 'multilanguageexample', severity: 'high', snykInstallation: 'SNYK', snykTokenId: 'SNYK_API_TOKEN'
         
