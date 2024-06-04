@@ -11,8 +11,7 @@ pipeline {
       steps {
         echo 'Testing...'
         
-           snykSecurity failOnError: false, failOnIssues: false, organisation: 'manugadari', projectName: 'multilanguageexample', snykInstallation: 'SNYK', snykTokenId: 'SNYK_API_TOKEN'
-        
+snykSecurity failOnError: false, failOnIssues: false, organisation: 'multilanguage', projectName: 'main', snykInstallation: 'SNYK', snykTokenId: 'SNYK_API_TOKEN'        
       }
     }
     stage('Deploy') {
